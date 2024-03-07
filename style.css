@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --Off-black: hsl(0, 0%, 8%);
+    --font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    background-color: var(--Off-black);
+    color: var(--white);
+    font-size: var(--font-size);
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 350px;
+    width: 100%;
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.container img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-top: 15px;
+}
+
+h1 {
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+.location {
+    color: var(--green);
+    margin-top: 8px;
+}
+
+.social-link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 8px 0;
+    background-color: var(--grey);
+}
+
+.social-link:hover {
+    background-color: var(--green);
+    color: var(--Off-black);
+}
+
+.card-tagline {
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        padding: 25px;
+    }
+    body {
+        margin: 20px;
+    }
+}
